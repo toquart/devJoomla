@@ -1,0 +1,43 @@
+h1{
+    font-size: 30px !important;
+}
+
+.containerHome {
+    position: relative;
+    color: white;
+    width:100%;
+}
+.bottom-left {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding:3%;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: left;
+}
+.titleHead{
+    margin-bottom: 0px;
+}
+
+.img-vign{
+    width: 100%;
+    max-width:100%;
+}
+
+.redBar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 5%; 
+    border-top: 2px solid #CC000C; 
+    opacity: 1;
+}
+
+@media screen and (max-width: 780px){
+    h1{
+        font-size: 20px !important;
+    }
+    .bottom-left > p{
+        margin-bottom: 0;
+    }
+}

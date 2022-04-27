@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>Display Home</name>
+    <author>Adrien Beaugendre</author>
+    <copyright>Copyright (C) 2021 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0.0</version>
+    <description>MOD_DISPLAYHOME_DESCRIPTION</description>
+    <namespace>Joomla\Module\Displayhome</namespace>
+
+    <files>
+        <filename module="mod_displayhome">mod_displayhome.php</filename>
+        <folder>admin</folder>
+        <folder>Helper</folder>
+        <folder>tmpl</folder>
+        <folder>tmpl/default</folder>
+        <folder>language</folder>
+    </files>
+    
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_displayhome.ini</language>
+        <language tag="en-GB>">en-GB/en-GB.mod_display.sys.ini</language>
+    </languages>
+
+    <config>
+        
+    </config>
+</extension>

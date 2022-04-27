@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="4.0" method="upgrade" client="site">
+	<name>mod_homepage</name>
+	<creationDate>October 2021</creationDate>
+	<author>Adrien Beaugendre</author>
+	<copyright>Copyright (C) 2019 Adrien Beaugendre, All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>MOD_HOMEPAGE_XML_DESCRIPTION</description>
+	<namespace>Toq\Module\Homepage</namespace>
+
+	<files>
+		<filename module="mod_homepage">mod_homepage.php</filename>
+		<filename>mod_homepage.xml</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<folder>media</folder>
+		<folder>src/Helper</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_homepage.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_homepage.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_homepage.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="catid" type="category" label="JCATEGORY" extension="com_content" multiple="true" layout="joomla.form.field.list-fancy-select" filter="intarray"/>
+				<field name="ordering" type="list" label="MOD_HOMEPAGE_FIELD_ORDERING_LABEL" default="p_dsc" validate="options">
+					<option value="c_dsc">MOD_HOMEPAGE_VALUE_RECENT_ADDED</option>
+					<option value="m_dsc">MOD_HOMEPAGE_VALUE_RECENT_MODIFIED</option>
+					<option value="p_dsc">MOD_HOMEPAGE_VALUE_RECENT_PUBLISHED</option>
+					<option value="mc_dsc">MOD_HOMEPAGE_VALUE_RECENT_TOUCHED</option>
+					<option	value="random">MOD_HOMEPAGE_VALUE_RECENT_RAND</option>
+				</field>
+				<field name="title" type="text" label="MOD_HOMEPAGE_TITLE" required="true"/>
+				<field name="subtitle" type="text" label="MOD_HOMEPAGE_SUBTITLE" required="true"/>
+				<field name="image"	type="media" label="MOD_HOMEPAGE_IMAGE" description="MOD_SLIDE_WELCOME_PARAMS_MEDIA_DESC"/>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,28 @@
+.agendaContainer{
+    background-color: #fff;
+    height: 497px;
+    max-height: 497px;
+    padding: 10%;
+}
+
+.agendaContainer h3{
+    font-size: 24px;
+    color: #CC000C;
+}
+
+.agendaContainer p{
+    margin: 0;
+}
+
+.bloque{
+    display: flex;
+}
+
+.fstBloc{
+    padding-right: 10px;
+    color: #CC000C;
+}
+
+.dateDisplay{
+    color: #CC000C;
+}
